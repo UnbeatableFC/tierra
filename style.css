@@ -223,6 +223,7 @@ img {
 }
 .savor img {
     width: 200%;
+    object-fit: cover;
 }
 /* WHOLESALE SECTION*/
 
