@@ -163,28 +163,46 @@ font-size: 45px;
 
 /* PHOTO SECTION */
 
-.photo-section {
-    margin: 250px 150px 200px 150px;
-    background-color: blue;
-}
-
-.curved-images {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    align-items: center;
-    justify-content: center;
-    transform:scaleY(0.5) scaleX(1.5);
-    border-radius: 50%;
-}
-
-.curved-images img{
+.image-row-container {
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 200px;
+    overflow: hidden;  
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: none;
+    transform: translateY(50%);
+}
+ .image-row img {
+    width: 200px;
+    height: 150px;
     object-fit: cover;
+    margin: 10px;
     border-radius: 10px;
 
 }
+
+.arc-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: tomato;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*arc effect*/
+.image-row{
+    clip-path: ellipse(60% 50% at 50% 50%);
+}
+
+
 
 .savor-section {
     background-image:url(assets/map-768x544.jpg) ;
