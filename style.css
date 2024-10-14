@@ -119,7 +119,7 @@ font-size: 45px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 800px;
+    width: max-content;
     height: 400px;
     margin: 0 0 0 70px;
 }
@@ -168,13 +168,15 @@ font-size: 45px;
     width: 300px; /* Adjust as needed */
     height: 150px; /* Adjust as needed */
     overflow: hidden;
-    margin: auto;
+    margin: 70px auto 30px auto;
+    
 }
 .arc {
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 50px; /* Half of height */
+    
     }
 .images {
     position: absolute;
@@ -185,7 +187,7 @@ font-size: 45px;
     justify-content: space-around;
 }
 .images img {
-    width: 95px; /* Adjust size as needed */
+    width: 105px; /* Adjust size as needed */
     height: auto;
 }
 .button {
